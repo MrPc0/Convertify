@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JPEG to PNG Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+  
+  <!-- Navigation -->
+  <header class="navbar">
+    <h1 class="logo">Convertify</h1>
+  </header>
+
+  <!-- Main Converter -->
+  <div class="container">
+    <h2>JPEG ➝ PNG Converter</h2>
+    <p class="tagline">Convert your images instantly in your browser</p>
+    
+    <input type="file" id="upload" accept="image/jpeg">
+    <button id="convertBtn" >Convert</button>
+    <a id="downloadLink" style="display:none;" download="converted.png" >Download PNG</a>
+    
+    <canvas id="canvas" style="display:none;"></canvas>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Convertify. All rights reserved.</p>
+    <p>Built with ❤️ for instant image conversion</p>
+  </footer>
+
+  <script src="animation.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
